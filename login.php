@@ -1,20 +1,20 @@
 <?php
-session_start();
-include 'db.php';
+// session_start();
+// include 'db.php';
 
-// Cek jika sudah login, arahkan ke index
-if (isset($_SESSION['login'])) {
-    header("Location: index.php");
-    exit();
-}
+// // Cek jika sudah login, arahkan ke index
+// if (isset($_SESSION['login'])) {
+//     header("Location: index.php");
+//     exit();
+// }
 
-// Cek cookie jika ada
-if (isset($_COOKIE['username'])) {
-    $_SESSION['login'] = true;
-    $_SESSION['username'] = $_COOKIE['username'];
-    header("Location: index.php");
-    exit();
-}
+// // Cek cookie jika ada
+// if (isset($_COOKIE['username'])) {
+//     $_SESSION['login'] = true;
+//     $_SESSION['username'] = $_COOKIE['username'];
+//     header("Location: index.php");
+//     exit();
+// }
 
 if (isset($_POST['login'])) {
     $username = $_POST['username'];

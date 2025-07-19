@@ -9,3 +9,13 @@ body {
     color : white;
     background-color : #063C9C;
 }
+
+.button2{
+    color : #0849BC;
+    background-color : white;
+    border : 1px solid #0849BC;
+}
+.button2:hover{
+    color : white;
+    background-color : #0849BC;
+}
